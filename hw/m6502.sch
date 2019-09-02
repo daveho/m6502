@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:m6502-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -1158,18 +1159,6 @@ Wire Wire Line
 	2450 7400 2800 7400
 Wire Wire Line
 	3150 7300 3150 7400
-Wire Bus Line
-	5050 600  7950 600 
-Wire Bus Line
-	5700 700  5700 1500
-Wire Bus Line
-	4950 4200 4950 6450
-Wire Bus Line
-	10050 1500 10050 6450
-Wire Bus Line
-	4950 700  4950 3800
-Wire Bus Line
-	8050 700  8050 4900
 Connection ~ 3150 7400
 Wire Wire Line
 	3150 7400 2800 7400
@@ -1197,4 +1186,26 @@ F 3 "" H 2800 7500 50  0001 C CNN
 $EndComp
 Text Notes 1850 7850 0    50   ~ 0
 Decoupling caps: place near power pins of U3-U7
+Wire Wire Line
+	3350 3900 3100 3900
+Wire Wire Line
+	3100 3900 3100 3300
+Connection ~ 3100 3300
+Wire Wire Line
+	3350 4800 3100 4800
+Wire Wire Line
+	3100 4800 3100 3900
+Wire Bus Line
+	5050 600  7950 600 
+Wire Bus Line
+	5700 700  5700 1500
+Wire Bus Line
+	4950 4200 4950 6450
+Wire Bus Line
+	10050 1500 10050 6450
+Wire Bus Line
+	4950 700  4950 3800
+Wire Bus Line
+	8050 700  8050 4900
+Connection ~ 3100 3900
 $EndSCHEMATC
